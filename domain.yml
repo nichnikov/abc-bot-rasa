@@ -1,0 +1,34 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+
+responses:
+  utter_greet:
+  - text: "Привет, как твои дела?"
+
+  utter_cheer_up:
+  - text: "Вот кое-что, чтобы поднять вам настроение:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Полегчало?"
+
+  utter_happy:
+  - text: "Отлично, продолжай!"
+
+  utter_goodbye:
+  - text: "Пока!"
+
+  utter_iamabot:
+  - text: "Я бот, созданный с помощью Rasa."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
